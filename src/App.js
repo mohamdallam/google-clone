@@ -3,13 +3,14 @@ import Home from "./components/Home";
 import "./App.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SearchPage from "./components/SearchPage";
 function App() {
   return (
     <div className="app">
       <Router>
         <Switch>
           <Route path="/search">
-            <h1>This Is The Search Page</h1>
+            <SearchPage />
           </Route>
 
           <Route path="/">
